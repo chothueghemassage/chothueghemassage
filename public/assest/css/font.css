@@ -1,0 +1,32 @@
+@font-face {
+font-family:robotor;
+src:url('../font/Roboto-Regular.ttf') format('truetype')
+}
+@font-face {
+font-family:robotob;
+src:url('../font/Roboto-Bold.ttf') format('truetype')
+}
+@font-face {
+font-family:robotoi;
+src:url('../font/Roboto-Italic.ttf') format('truetype')
+}
+@font-face {
+font-family:robotol;
+src:url('../font/Roboto-Light.ttf') format('truetype')
+}
+@font-face {
+font-family:robotom;
+src:url('../font/Roboto-Medium.ttf') format('truetype')
+}
+@font-face {
+font-family:robotocr;
+src:url('../font/RobotoCondensed-Regular.ttf') format('truetype')
+}
+@font-face {
+font-family:robotocb;
+src:url('../font/RobotoCondensed-Bold.ttf') format('truetype')
+}
+@font-face {
+font-family:utm-impact;
+src:url('../font/utm-impact.ttf') format('truetype')
+}

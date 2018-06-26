@@ -1,0 +1,156 @@
+
+<header class="header-mb">
+  <div class="header-top-mb">
+            <div class="search">
+                <div class="form-search">
+                    <input class="mb" id="tbSearch" type="text" placeholder="tìm kiếm sản phẩm" onkeyup="CheckPostSearch(event)" onmouseover="checksuggest()">
+                    <a  title="search" onclick="postSearch()">
+                        <i class="fa fa-search mb" aria-hidden="true"></i>
+                    </a>
+                    <div class="suggest timkiem mb">
+                      <ul class="pro-suggest">
+                      </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap-cart-mb">
+              <a class="cart" href="/cart/shopping-cart" title="">
+                    <img src="/shopping-cart.jpg"/>
+                    <%if(!session.cart){%>
+                    <span class="so">0</span>
+                    <%}else {%>
+                        <span class="so"><%=session.cart.totalQty%></span>
+                    <% } %>
+              </a>
+            </div>
+            <div class="menu-mb">
+                <div class="icon-menu"></div>
+            </div>
+            <nav class="subnav">
+                <div class="navigation mb">
+                    <ul class="list-danh-muc">
+                       <li>
+                         <a href="/" title=""><i class="fa fa-home"></i>Trang chủ</a>
+                         <a href="tel:0989890248" class="liveeventmb" >
+                            <i class="fa fa-phone phone-mb ">
+                          </i>
+                            <span class="text-mb">
+                                09.89.89.0248
+                            </span>
+                        </a>
+                       </li>
+                       <li>
+                         <a href="/san-pham-giam-gia-flash-sale" title=""><i class="fa fa-bolt"></i>Khuyến mại flash sale</a>
+                       </li>
+                       <li>
+                         <a  title=""><img src="/massage-chair-icon.png" class="icon"> Ghế massage</a>
+                         <ul class="sub-list">
+                           <li>
+                              <a href="/ghe-massage-ban-chay-nhat" title=""><i class="fa fa-angle-right"></i>Ghế massage bán chạy nhất</a>
+                           </li>
+                           <li>
+                              <a href="/ghe-massage-boss" title=""><i class="fa fa-angle-right"></i>Ghế Massage Boss</a>
+                           </li>
+                           <li>
+                              <a href="/ghe-massage-okia" title=""><i class="fa fa-angle-right"></i>Ghế Massage Okia</a>
+                           </li>
+                           <li>
+                              <a href="/ghe-massage-osim" title=""><i class="fa fa-angle-right"></i>Ghế Massage Osim</a>
+                           </li>
+                           <li>
+                              <a href="/ghe-massage-drcare" title=""><i class="fa fa-angle-right"></i>Ghế Massage Dr.care</a>
+                           </li>
+                           <li>
+                              <a href="/ghe-massage-maxcare" title=""><i class="fa fa-angle-right"></i>Ghế Massage MaxCare</a>
+                           </li>
+                           <li>
+                              <a href="/ghe-massage-poogsan" title=""><i class="fa fa-angle-right"></i>Ghế Massage Poogsan</a>
+                           </li>
+                           <li>
+                              <a href="/ghe-massage-panasonic" title=""><i class="fa fa-angle-right"></i>Ghế Massage Panasonic</a>
+                           </li>
+                         </ul>
+                       </li>
+                       <li>
+                         <a  title=""><img src="/maychaybo-icon.png" class="icon"> Máy chạy bộ</a>
+                         <ul class="sub-list">
+                           <li>
+                              <a href="/may-chay-bo-ban-chay-nhat" title=""><i class="fa fa-angle-right"></i>Máy chạy bộ bán chạy nhất</a>
+                           </li>
+                           <li>
+                              <a href="/may-chay-bo-yuki" title=""><i class="fa fa-angle-right"></i>Máy chạy bộ Yuki</a>
+                           </li>
+                           <li>
+                              <a href="/may-chay-bo-like" title=""><i class="fa fa-angle-right"></i>Máy chạy bộ Like</a>
+                           </li>
+                           <li>
+                              <a href="/may-chay-bo-takasha" title=""><i class="fa fa-angle-right"></i>Máy chạy bộ Takasha</a>
+                           </li>
+                           <li>
+                              <a href="/may-chay-bo-takasha" title=""><i class="fa fa-angle-right"></i>Máy chạy bộ Takasha</a>
+                           </li>
+                           <li>
+                              <a href="/may-chay-bo-max" title=""><i class="fa fa-angle-right"></i>Máy chạy bộ Max</a>
+                           </li>
+                           <li>
+                              <a href="/may-chay-bo-xapon" title=""><i class="fa fa-angle-right"></i>Máy chạy bộ Xapon</a>
+                           </li>
+                           <li>
+                              <a href="/may-chay-bo-gym" title=""><i class="fa fa-angle-right"></i>Máy chạy bộ GYM</a>
+                           </li>
+                           <li>
+                              <a href="/may-chay-bo-kingport" title=""><i class="fa fa-angle-right"></i>Máy chạy bộ Kingport</a>
+                           </li>
+                           <li>
+                              <a href="/may-chay-bo-goodforsalas" title=""><i class="fa fa-angle-right"></i>Máy chạy bộ Goodfor Salas</a>
+                           </li>
+                         </ul>
+                       </li>
+                       <li>
+                         <a  title=""><img src="/bep-icon.png" class="icon"> Bếp từ, bếp hồng ngoại</a>
+                         <ul class="sub-list">
+                           <li>
+                              <a href="/bep-tu-bep-hong-ngoai-ban-chay-nhat" title=""><i class="fa fa-angle-right"></i>bếp bán chạy nhất</a>
+                           </li>
+                           <li>
+                              <a href="" title=""><i class="fa fa-angle-right"></i>Bếp Sunhouse</a>
+                           </li>
+                         </ul>
+                       </li>
+                       <li>
+                         <a title=""><i class="fa fa-cog"></i>Dịch vụ sửa chữa</a>
+                         <ul class="sub-list">
+                           <li>
+                              <a href="/dich-vu-sua-ghe-massage" title=""><i class="fa fa-angle-right"></i>Dịch vụ sửa ghế massage tại nhà</a>
+                           </li>
+                           <li>
+                              <a href="/dich-vu-thay-da-boc-da-ghe-massage" title=""><i class="fa fa-angle-right"></i>Dịch vụ thay da ghế massage</a>
+                           </li>
+                           <li>
+                              <a href="/dich-vu-sua-chua-may-chay-bo" title=""><i class="fa fa-angle-right"></i>Dịch vụ sửa máy chạy bộ tại nhà</a>
+                           </li>
+                           <li>
+                              <a href="/dich-vu-sua-chua-bep-tu-bep-hong-ngoai" title=""><i class="fa fa-angle-right"></i>Dịch vụ sửa bếp tại nhà</a>
+                           </li>
+                           <li>
+                              <a href="/dich-vu-sua-chua-may-rua-bat" title=""><i class="fa fa-angle-right"></i>Dịch vụ sửa chữa máy rửa bát</a>
+                           </li>
+                         </ul>
+                       </li>
+                       <li>
+                         <a href="/tin-tuc" title=""><i class="fa fa-newspaper-o"></i> Tin tức</a>
+                       </li>
+                       <li>
+                         <a href="https://www.facebook.com/Suaghemassage247-858869800925916/" title="" class="icon-facebook" target="_blank"><i class="fa fa-facebook"></i> ghemassagecentre</a> |
+                         <a href="https://www.messenger.com/t/1385673044825016" title="" class="icon-facebook" target="_blank"><i class="fa fa-comment"></i> Chat với tôi</a>
+                       </li>
+                    </ul>
+                </div>
+                <div class="location-centre">
+                  <div>Trung tâm DVKT ghemassagecentre </div>
+                  <i class="fa fa-map-marker-alt"></i> Địa chỉ : số 114 B1 Văn Chương, Đống Đa, Hà Nội
+                </div>
+            </nav>
+
+  </div>
+</header>

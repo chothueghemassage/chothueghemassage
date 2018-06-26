@@ -1,0 +1,80 @@
+
+
+
+<section>
+    <div id="dichvusuachua" class="container">
+        <div class="row">
+              <div class="col-xs-12">
+                  <h2>Dịch vụ sửa chữa</h2>
+                  <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a  href="#<%=services.service[0].index%>" data-toggle="tab"><%=services.service[0].name%></a>
+                    </li>
+                    <%for(var i=1;i<3;i++){%>
+                        <li class="">
+                            <a  href="#<%=services.service[i].index%>" data-toggle="tab"><%=services.service[i].name%></a>
+                        </li>
+                    <%}%>
+                  </ul>
+                  <div class="tab-content ">
+                      <div class="tab-pane active" id="<%=services.service[0].index%>">
+                          <div class="wrap-service">
+                              <div class="img-service">
+                                  <img src="/assest/image/<%=lastpostshome.posts[0].image%>">
+                              </div>
+                              <div class="detail-service">
+                                  <h3><%-lastpostshome.posts[0].title%></h3>
+                                  <p>Đã từ lâu ghế mát xa đã là thiết bị xa xỉ với người dùng Việt Nam, nhưng mấy năm gần đây ghế massage đã là thiết bị chăm sóc sức khỏe không thể thiếu cho mỗi gia đình hiện nay bởi tác dụng của ghế massage mang lại không hề ít cho sức khỏe của chúng ta. Nếu bạn là người hay đi spa cũng biết tác dụng của nó là xả tress, giải tỏa căng thẳng, giải độc cơ thể, làm đẹp da, giúp giảm cân, và điều trị bệnh, giúp cơ thể khỏe mạnh hơn thì giờ đây việc sở hữu 1 chiếc ghế massage toàn thân trong nhà sẽ giúp bạn thư giãn, điều trị đau lưng, giảm béo, mỏi khớp,  liệu trị không khác gì đi spa vậy, không những vậy nó còn chăm sóc sức khỏe cho cả gia đình bạn, đặc biệt hỗ trợ rất tốt cho người già. Chúng tôi khuyên mỗi gia đình hãy sắm cho gia đình bạn 1 chiếc ghế matxa toàn thân nhé.</p>
+                                  <div class="btn-view-all">
+                                      <a href="/dich-vu-sua-ghe-massage"><i class="fa fa-angle-double-down"></i>Xem chi tiết tại đây</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="wrap-service">
+                              <div class="img-service">
+                                  <img src="/assest/image/<%=lastpostshome.posts[1].image%>">
+                              </div>
+                              <div class="detail-service">
+                                  <h3><%-lastpostshome.posts[1].title%></h3>
+                                  <p>Ghế massage là một trong những thiết bị đã không còn xa lạ với nhiều gia đình Việt hiện đại. Không chỉ mang đến cảm giác thư thái và thoải mái khi sử dụng, dòng sản phẩm ghế này còn giúp cho hệ thống xương, cột sống của bạn được điều chỉnh tốt hơn. Tuy nhiên, như các sản phẩm, thiết bị khác, sau thời gian dài sử dụng chắc chắn sẽ có hư hỏng, đặc biệt phần da thường xuyên tiếp xúc, ma sát dễ bị bong tróc. Chúng ta cùng điểm qua một số nguyên nhân khiến da ghế massage nhanh bị hỏng nhé:</p>
+                                  <div class="btn-view-all">
+                                      <a href="/dich-vu-thay-da-boc-da-ghe-massage"><i class="fa fa-angle-double-down"></i>Xem chi tiết tại đây</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="tab-pane" id="<%=services.service[1].index%>">
+                          <div class="wrap-service">
+                            <div class="img-service">
+                                <img src="/assest/image/<%=lastpostshome.posts[2].image%>">
+                            </div>
+                            <div class="detail-service">
+                                <h3><%-lastpostshome.posts[2].title%></h3>
+                                <p>Máy tập chạy bộ là thiết bị cũng như là người bạn giúp tăng cường sức khỏe tinh thần, giảm loãng xương, ngủ ngon hơn, chống lại căng thẳng và nhiều lợi ích to lớn khác nữa.</p>
+                                <p>Một nghiên cứu gần đây đã được công bố cho rằng, nếu bạn dành thời gian 30 phút mỗi ngày cho việc chạy bộ thì bạn đã góp phần tự nâng cao sức khỏe cho bản thân, như giảm nguy cơ mắc hội chứng chuyển hóa – một nhóm các triệu chứng ban đầu dẫn đến nguy cơ các bệnh về tim mạch, tiểu đường và đột quỵ. Ngay từ khi còn trẻ, bạn hãy đảm bảo sức khỏe luôn được tốt nhất. Cuộc sống phát triển, hiện đại hơn, đồng nghĩa với đó là những nhu cầu cũng trở nên cao hơn. Không gian đô thị hóa hạn chế việc bạn có thể chạy bộ ngoài trời. Chính vì thế mà máy chạy bộ là 1 trong những thiết bị được lựa chọn hàng đầu , vừa tiết kiệm được thời gian, tiền bạc, mà còn khiến bạn chủ động hơn trong công cuộc thể dục, thể thao tại nhà.</p>
+                                <div class="btn-view-all">
+                                    <a href="/dich-vu-sua-chua-may-chay-bo"><i class="fa fa-angle-double-down"></i>Xem chi tiết tại đây</a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="<%=services.service[2].index%>">
+                          <div class="wrap-service">
+                              <div class="img-service">
+                              <img src="/assest/image/<%=lastpostshome.posts[3].image%>">
+                          </div>
+                              <div class="detail-service">
+                              <h3><%-lastpostshome.posts[3].title%></h3>
+                              <p>Bếp từ và bếp hồng ngoại hiện đang là những dòng bếp được sử dụng rất nhiều trong căn bếp nhà bạn. Chúng đã thay thế cho bếp ga, một trong những công cụ cũng đã được nhiều gia đình lựa chọn trước đây. Nhưng vì tính an toàn, đảm bảo sức khỏe cũng như gìn giữ môi trường mà chúng được coi là thiết bị bếp thân thiện với đa số người nội trợ.</p>
+                              <p>Mặc dù sử dụng bếp từ, bếp hồng ngoại rất tiện lợi, nhưng đôi khi nó cũng mang đến một số trục trặc không đáng có , đôi khi khiến bạn phải mời cả gia đình ra ăn tiệm bên ngoài. Nhưng bạn không phải lo, với dịch vụ sửa chữa tại nhà 24/7, chúng tôi là một trong những địa chỉ sửa chữa uy tín, sẽ mang đến cho bạn sự hài lòng và thân thiện</p>
+                              <div class="btn-view-all">
+                                  <a href="/dich-vu-sua-chua-bep-tu-bep-hong-ngoai"><i class="fa fa-angle-double-down"></i>Xem chi tiết tại đây</a>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+        </div>
+    </div>
+</section>
