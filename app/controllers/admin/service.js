@@ -49,7 +49,7 @@ exports.service_create_service = (req, res, next) => {
     .save()
     .then(result => {
       console.log(result);
-      res.redirect('/service')
+      res.redirect('/service/service-all')
     })
     .catch(err => {
       console.log(err);
@@ -120,7 +120,7 @@ exports.service_update_service_edit = (req, res, next) => {
   })
   .exec()
   .then((err,doc)=>{
-    res.redirect('/service');
+    res.redirect('/service/service-all');
   });
 }
 exports.service_delete = (req, res, next) => {

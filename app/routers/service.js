@@ -30,7 +30,7 @@ const upload = multer({
  var urlencodedParser = bodyParser.urlencoded({ extended: false })
 // mongoose.connect('mongodb://localhost/service',{useMongoClient:true});
 // mongoose.Promise = global.Promise;
-router.get('/',ServiceController.service_get_all);
+router.get('/service-all',ServiceController.service_get_all);
 router.get('/service-create',ServiceController.service_add_service);
 router.post('/service-create',upload.single('image'),urlencodedParser,ServiceController.service_create_service);
 
