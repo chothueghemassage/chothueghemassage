@@ -2721,3 +2721,55 @@ section.mb{
   margin-left: 1.25em;
     font-size: 14px;
 }
+.box-cho-thue{
+  border:1px solid $text-dark-orange;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  div.title-cho-thue{
+    padding:5px;
+    text-align: center;
+    font-family: robotob;
+    text-transform: uppercase;
+    height: 50px;
+  }
+  div.title-cho-thue.orange{
+    background-color: rgba(255,0,156,0.5);
+    color:#fff;
+  }
+  div.title-cho-thue.blue{
+    background-color: rgba(0,0,238,0.5);
+    color:#fff;
+  }
+  div.title-cho-thue.green{
+    background-color: rgba(0,205,102,0.5);
+    color:#fff;
+  }
+  div.image-cho-thue{
+    width: 100%;
+    img{
+      max-width: 100%;
+    }
+  }
+  div.des-cho-thue{
+    background-color:#363636;
+    color:#fff;
+    padding:5px;
+    line-height: 1.4em;
+  }
+  div.btn-view-chothue{
+    text-align: center;
+    font-size: 14px;
+    margin:10px 0;
+    width:100%;
+    i{
+      font-size: 16px;
+      margin-right:5px;
+    }
+    a{
+      color:$text-dark-orange;
+      &:hover,&:active{
+        color:$do;
+      }
+    }
+  }
+}

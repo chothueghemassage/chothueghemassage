@@ -2351,3 +2351,44 @@ section.mb div.header-main > h1 {
   list-style: disc;
   margin-left: 1.25em;
   font-size: 14px; }
+
+.box-cho-thue {
+  border: 1px solid #db4028;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
+  .box-cho-thue div.title-cho-thue {
+    padding: 5px;
+    text-align: center;
+    font-family: robotob;
+    text-transform: uppercase;
+    height: 50px; }
+  .box-cho-thue div.title-cho-thue.orange {
+    background-color: rgba(255, 0, 156, 0.5);
+    color: #fff; }
+  .box-cho-thue div.title-cho-thue.blue {
+    background-color: rgba(0, 0, 238, 0.5);
+    color: #fff; }
+  .box-cho-thue div.title-cho-thue.green {
+    background-color: rgba(0, 205, 102, 0.5);
+    color: #fff; }
+  .box-cho-thue div.image-cho-thue {
+    width: 100%; }
+    .box-cho-thue div.image-cho-thue img {
+      max-width: 100%; }
+  .box-cho-thue div.des-cho-thue {
+    background-color: #363636;
+    color: #fff;
+    padding: 5px;
+    line-height: 1.4em; }
+  .box-cho-thue div.btn-view-chothue {
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0;
+    width: 100%; }
+    .box-cho-thue div.btn-view-chothue i {
+      font-size: 16px;
+      margin-right: 5px; }
+    .box-cho-thue div.btn-view-chothue a {
+      color: #db4028; }
+      .box-cho-thue div.btn-view-chothue a:hover, .box-cho-thue div.btn-view-chothue a:active {
+        color: #e31212; }
