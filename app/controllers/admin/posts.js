@@ -95,7 +95,7 @@ exports.posts_create_posts = (req, res, next) => {
     .save()
     .then(result => {
       console.log(result);
-      res.redirect('/posts')
+      res.redirect('/posts/posts-all')
     })
     .catch(err => {
       console.log(err);
