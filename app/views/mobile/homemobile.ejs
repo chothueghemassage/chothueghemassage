@@ -54,220 +54,46 @@
         </div>
   </div>
   <div style="clear:both"></div>
-  <div class="flexslider-mb carousel">
-    <ul class="slides">
-      <% for(var i=0;i<flashsale.count;i++){ %>
-      <li class="item-product-mb">
-        <div class="img-product">
-          <img src="<%=flashsale.ghemassages[i].imagedefault[0].originalname%>" alt="<%=flashsale.ghemassages[i].imagedefault[0].originalname %>">
-      </div>
-        <div class="detail-product">
-          <div class="name-product">
-              <a href="/san-pham-giam-gia-flash-sale/<%=flashsale.ghemassages[i].nameseo%>"><%=flashsale.ghemassages[i].name %></a>
-          </div>
-          <div class="sale-off">
-            <span>Sale <span class="commas"><%=flashsale.ghemassages[i].price - flashsale.ghemassages[i].pricesale  %></span> ₫</span>
-          </div>
-          <div class="wrap-price-buy">
-              <div class="wrap-price">
-                  <div class="price-sale"><span class="commas"><%=flashsale.ghemassages[i].pricesale %></span> ₫</div>
-                  <div class="price"><span class="commas"><%=flashsale.ghemassages[i].price %></span> ₫</div>
-              </div>
-              <div class="buy">
-                <a href="/san-pham-giam-gia-flash-sale/<%=flashsale.ghemassages[i].nameseo%>">
-                  <i class="fa fa-cart-plus"></i>
-
-                </a>
-              </div>
-          </div>
-        </div>
-      </li>
-      <%}%>
-    </ul>
-  </div>
-</section>
-<section>
-  <div class="products-sale-mb">
-        <h2>Ghế massage bán chạy nhất</h2>
-        <a href="/ghe-massage-ban-chay-nhat" class="view-all">xem tất cả <i class="fa fa-angle-right"></i></a>
-  </div>
-  <div style="clear:both"></div>
-  <div class="flexslider-mb carousel">
-    <ul class="slides">
-      <% for(var i=0;i<ghebestsell.count;i++){ %>
-        <li class="item-product-mb">
-          <div class="img-product">
-              <img src="/<%=ghebestsell.ghemassages[i].imagedefault[0].originalname %>" alt="<%=ghebestsell.ghemassages[i].imagedefault[0].originalname %>"/>
-          </div>
-          <div class="detail-product">
-              <div class="name-product">
-                  <a href="/ghe-massage/<%=ghebestsell.ghemassages[i].nameseo%>"> <%=ghebestsell.ghemassages[i].name %></a>
-              </div>
-              <div class="sale-off">
-                <span>Sale <span class="commas"><%=ghebestsell.ghemassages[i].price - ghebestsell.ghemassages[i].pricesale%></span> ₫</span>
-              </div>
-              <div class="wrap-price-buy">
-                  <div class="wrap-price">
-                      <div class="price-sale"><span class="commas"><%=ghebestsell.ghemassages[i].pricesale %></span> ₫</div>
-                      <div class="price"><span class="commas"><%=ghebestsell.ghemassages[i].price %></span> ₫</div>
-                  </div>
-                  <div class="buy">
-                    <a href="/ghe-massage/<%=ghebestsell.ghemassages[i].nameseo %>">
-                      <i class="fa fa-cart-plus"></i>
-                    </a>
-                  </div>
-              </div>
-          </div>
-        </li>
-      <%}%>
-    </ul>
-  </div>
-</section>
-<section>
-  <div class="products-sale-mb">
-        <h2>Máy chạy bộ bán chạy nhất</h2>
-        <a href="/may-chay-bo-ban-chay-nhat" class="view-all">xem tất cả <i class="fa fa-angle-right"></i></a>
-  </div>
-  <div style="clear:both"></div>
-  <div class="flexslider-mb carousel">
-    <ul class="slides">
-      <% for(var i=0;i<maychaybobestsell.count;i++){ %>
-        <li class="item-product-mb">
-          <div class="img-product">
-              <img src="/<%=maychaybobestsell.ghemassages[i].imagedefault[0].originalname %>" alt="<%=maychaybobestsell.ghemassages[i].imagedefault[0].originalname %>"/>
-          </div>
-          <div class="detail-product">
-              <div class="name-product">
-                  <a href="/may-chay-bo/<%=maychaybobestsell.ghemassages[0].nameseo %>"><%=maychaybobestsell.ghemassages[i].name %></a>
-              </div>
-              <div class="sale-off">
-                <span>Sale <span class="commas" ><%=maychaybobestsell.ghemassages[i].price - maychaybobestsell.ghemassages[i].pricesale  %></span> ₫</span>
-              </div>
-              <div class="wrap-price-buy">
-                  <div class="wrap-price">
-                      <div class="price-sale"><span class="commas" ><%=maychaybobestsell.ghemassages[i].pricesale %></span> ₫</div>
-                      <div class="price"><span class="commas" ><%=maychaybobestsell.ghemassages[i].price %></span> ₫</div>
-                  </div>
-                  <div class="buy">
-                    <a href="/may-chay-bo/<%=maychaybobestsell.ghemassages[0].nameseo %>">
-                      <i class="fa fa-cart-plus"></i>
-                    </a>
-                  </div>
-              </div>
-          </div>
-        </li>
-      <%}%>
-    </ul>
-  </div>
 </section>
 
 <section>
   <div class="products-sale-mb">
-        <h2>Bếp bán chạy nhất</h2>
-        <a href="/bep-tu-bep-hong-ngoai-ban-chay-nhat" class="view-all">xem tất cả <i class="fa fa-angle-right"></i></a>
+        <h2>Dịch vụ cho thuê ghế massage</h2>
+        <a href="/cho-thue-ghe-massage-theo-yeu-cau" class="view-all">xem chi tiết <i class="fa fa-angle-right"></i></a>
   </div>
   <div style="clear:both"></div>
-  <div class="flexslider-mb carousel">
-    <ul class="slides">
-      <% for(var i=0;i<bepbestsell.count;i++){ %>
-        <li class="item-product-mb">
-          <div class="img-product">
-              <img src="/<%=bepbestsell.ghemassages[i].imagedefault[0].originalname %>" alt="<%=bepbestsell.ghemassages[i].imagedefault[0].originalname %>"/>
-          </div>
-          <div class="detail-product">
-              <div class="name-product">
-                  <a href="/bep-tu-bep-hong-ngoai/<%=bepbestsell.ghemassages[i].nameseo %>"><%=bepbestsell.ghemassages[i].name %></a>
+  <div class="row">
+      <div class="dichvuchothue" >
+          <div class="col-xs-12">
+            <div class="box-cho-thue">
+              <div class="title-cho-thue orange"><%=services.service[0].name%></div>
+              <div class="image-cho-thue"><img src="/assest/image/<%=lastpostshome.posts[0].image%>" alt="cho thuê ghế massage tại nhà"></div>
+              <div class="des-cho-thue">Bạn đang có nhu cầu thuê ghế massage phục vụ chăm sóc sức khỏe hãy gọi cho chúng tôi để được tư vấn và hướng dẫn.</div>
+              <div class="btn-view-chothue">
+                  <a href="/cho-thue-ghe-massage-tai-nha"><i class="fa fa-angle-double-down"></i>Xem chi tiết tại đây</a>
               </div>
-              <div class="sale-off">
-                <span>Sale <span class="commas"><%=bepbestsell.ghemassages[i].price - bepbestsell.ghemassages[i].pricesale%></span> ₫</span>
-              </div>
-              <div class="wrap-price-buy">
-                  <div class="wrap-price">
-                      <div class="price-sale"><span class="commas"><%=bepbestsell.ghemassages[i].pricesale %></span> ₫</div>
-                      <div class="price"><span class="commas"><%=bepbestsell.ghemassages[i].price %></span> ₫</div>
-                  </div>
-                  <div class="buy">
-                    <a href="/bep-tu-bep-hong-ngoai/<%=bepbestsell.ghemassages[i].nameseo %>">
-                      <i class="fa fa-cart-plus"></i>
-                    </a>
-                  </div>
-              </div>
-          </div>
-      </li>
-      <%}%>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <div class="products-sale-mb">
-        <h2>Dịch vụ sửa chữa</h2>
-        <a href="/dich-vu-sua-chua" class="view-all">xem tất cả <i class="fa fa-angle-right"></i></a>
-  </div>
-  <div style="clear:both"></div>
-  <ul class="nav nav-tabs">
-    <li class="active">
-        <a  href="#<%=services.service[0].index%>" data-toggle="tab"><%=services.service[0].name%></a>
-    </li>
-    <%for(var i=1;i<3;i++){%>
-        <li class="">
-            <a  href="#<%=services.service[i].index%>" data-toggle="tab"><%=services.service[i].name%></a>
-        </li>
-    <%}%>
-  </ul>
-  <div class="tab-content ">
-      <div class="tab-pane active" id="<%=services.service[0].index%>">
-          <div class="wrap-service-mb">
-              <div class="img-service">
-                  <img src="/assest/image/<%=lastpostshome.posts[0].image%>">
-              </div>
-              <div class="detail-service">
-                  <h3><%-lastpostshome.posts[0].title%></h3>
-                  <%-lastpostshome.posts[0].shortdescription%>
-                  <div class="btn-view-all">
-                      <a href="/dich-vu-sua-ghe-massage"><i class="fa fa-angle-double-down"></i>Xem chi tiết tại đây</a>
-                  </div>
-              </div>
-          </div>
-          <div class="wrap-service-mb">
-              <div class="img-service">
-                  <img src="/assest/image/<%=lastpostshome.posts[1].image%>">
-              </div>
-              <div class="detail-service">
-                  <h3><%-lastpostshome.posts[1].title%></h3>
-                  <%-lastpostshome.posts[1].shortdescription%>
-                  <div class="btn-view-all">
-                      <a href="/dich-vu-thay-da-boc-da-ghe-massage"><i class="fa fa-angle-double-down"></i>Xem chi tiết tại đây</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="tab-pane" id="<%=services.service[1].index%>">
-          <div class="wrap-service-mb">
-            <div class="img-service">
-                <img src="/assest/image/<%=lastpostshome.posts[2].image%>">
             </div>
-            <div class="detail-service">
-                <h3><%-lastpostshome.posts[2].title%></h3>
-                <%-lastpostshome.posts[2].shortdescription%>
-                <div class="btn-view-all">
-                    <a href="/dich-vu-sua-chua-may-chay-bo"><i class="fa fa-angle-double-down"></i>Xem chi tiết tại đây</a>
-                </div>
-            </div>
-        </div>
-      </div>
-      <div class="tab-pane" id="<%=services.service[2].index%>">
-          <div class="wrap-service-mb">
-              <div class="img-service">
-              <img src="/assest/image/<%=lastpostshome.posts[3].image%>">
+
           </div>
-              <div class="detail-service">
-              <h3><%-lastpostshome.posts[3].title%></h3>
-              <%-lastpostshome.posts[3].shortdescription%>
-              <div class="btn-view-all">
-                  <a href="/dich-vu-sua-chua-bep-tu-bep-hong-ngoai"><i class="fa fa-angle-double-down"></i>Xem chi tiết tại đây</a>
+          <div class="col-xs-12">
+            <div class="box-cho-thue">
+              <div class="title-cho-thue blue"><%=services.service[1].name%></div>
+              <div class="image-cho-thue"><img src="/assest/image/<%=lastpostshome.posts[1].image%>" alt="cho thuê ghế massage tại nhà"></div>
+              <div class="des-cho-thue">Bạn đang có nhu cầu thuê ghế massage để tổ chức hội thảo, hội nghị. Hãy gọi cho chúng tôi để được tư vấn và hướng dẫn</div>
+              <div class="btn-view-chothue">
+                  <a href="/cho-thue-ghe-massage-to-chuc-hoi-thao-hoi-nghi"><i class="fa fa-angle-double-down"></i>Xem chi tiết tại đây</a>
               </div>
+            </div>
           </div>
+          <div class="col-xs-12">
+            <div class="box-cho-thue">
+              <div class="title-cho-thue green"><%=services.service[2].name%></div>
+              <div class="image-cho-thue"><img src="/assest/image/<%=lastpostshome.posts[2].image%>" alt="cho thuê ghế massage tại nhà"></div>
+              <div class="des-cho-thue">Bạn đang có nhu cầu thuê ghế massage để tổ chức gameshow, chương trình. Hãy gọi cho chúng tôi để được tư vấn và hướng dẫn</div>
+              <div class="btn-view-chothue">
+                  <a href="/cho-thue-ghe-massage-to-chuc-game-show-chuong-trinh"><i class="fa fa-angle-double-down"></i>Xem chi tiết tại đây</a>
+              </div>
+            </div>
           </div>
       </div>
   </div>
