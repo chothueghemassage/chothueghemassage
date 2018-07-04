@@ -2723,6 +2723,7 @@ section.mb{
   border:1px solid $text-dark-orange;
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  margin-bottom: 10px;
   div.title-cho-thue{
     padding:5px;
     text-align: center;
@@ -2757,16 +2758,18 @@ section.mb{
   div.btn-view-chothue{
     text-align: center;
     font-size: 14px;
-    margin:10px 0;
+    padding:10px 0;
     width:100%;
+    background: #151515
+
     i{
       font-size: 16px;
       margin-right:5px;
     }
     a{
-      color:$text-dark-orange;
+      color:#a9a2a1;
       &:hover,&:active{
-        color:$do;
+        color:#cac1bf;
       }
     }
   }
