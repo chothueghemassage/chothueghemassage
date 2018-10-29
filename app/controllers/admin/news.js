@@ -78,7 +78,7 @@ exports.news_create_news = (req, res, next) => {
   const news = new News({
     _id: new mongoose.Types.ObjectId(),
     title: req.body.title,
-    titleseo:req.body.title,
+    titleseo:req.body.titleseo,
     slidenews:req.body.slidenews,
     shortdescription: req.body.shortdescription,
     description: req.body.description,
