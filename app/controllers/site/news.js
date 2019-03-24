@@ -39,7 +39,7 @@ exports.news_get_home = (req, res, next) => {
            };
            News.find({lastnews:true})
                 .select("_id title titleseo shortdescription description day ogtitle ogdescription keywords hotnews lastnews slidenews category image index")
-                .limit(40)
+                .limit(8)
                 .sort('index')
                 .exec()
                 .then(docs => {
